@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jiexiArray</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if responseObject as? NSDictionary != nil{
+    let dict:NSDictionary = responseObject as! NSDictionary
+    let dataArray = dict.arrayParse(withDicKey: "exceptionList", with: ReportExceptionModel.self)
+    finish?(nil,dataArray)
+}else{
+    finish?(nil,nil)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>711F3A25-3D9D-4219-A210-5C099DB720D5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jiexiArray</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>jiexiArray</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

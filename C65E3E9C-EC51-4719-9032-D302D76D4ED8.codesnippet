@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jiegouOC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Life Cycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+#pragma mark – Notifications
+#pragma mark – Data (包含初始化、数据处理)
+#pragma mark – UI
+#pragma mark – Layout
+#pragma mark – Drawing
+#pragma mark – Event
+#pragma mark – Skip
+#pragma mark - Public Methods
+#pragma mark - Private Methods
+#pragma mark – KVO
+#pragma mark – Overload 重载父类方法
+#pragma mark - Setter
+#pragma mark – Getter
+#pragma mark - Delegate</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C65E3E9C-EC51-4719-9032-D302D76D4ED8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jiegouOC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>jiegouOC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
