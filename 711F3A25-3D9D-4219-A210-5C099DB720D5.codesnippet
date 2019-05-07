@@ -15,7 +15,11 @@
     finish?(nil,dataArray)
 }else{
     finish?(nil,nil)
-}</string>
+}
+
+var list:NSArray?
+list = NSArray.yy_modelArray(with: VideoLive.self, json: responseObject) as NSArray?
+finish?(nil,list)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>711F3A25-3D9D-4219-A210-5C099DB720D5</string>
 	<key>IDECodeSnippetLanguage</key>

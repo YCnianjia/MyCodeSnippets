@@ -9,12 +9,17 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>{ (error:Error?, obj:Any?) in
-            if error == nil{
-                
-            }else{
-               self.view.makeToast(self.getErrorString(error))
-            }</string>
+	<string>var resultObj:[YJKServiceHealthQuestionModel] = []
+if error != nil{
+    MBProgressHUD.showMessage(error!.localizedDescription)
+}else{
+    if obj as? [YJKServiceHealthQuestionModel] != nil{
+        resultObj = obj as! [YJKServiceHealthQuestionModel]
+    }
+}
+
+self.randomHealthQuestion = resultObj
+self.refreshSectionType()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6202ECB8-84FE-456D-BD6E-59C808241163</string>
 	<key>IDECodeSnippetLanguage</key>
