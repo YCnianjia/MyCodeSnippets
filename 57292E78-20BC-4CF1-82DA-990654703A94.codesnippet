@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CellDelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension NewsNewCommentMsgListVC:UITableViewDataSource, UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return dataArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        let model:NewsNewCommentMsgModel = dataArray[indexPath.row]
+        
+        let CELLINDENTIFIER = "NewsNewCommentMsgTCell"
+        var cell:NewsNewCommentMsgTCell? = tableView.dequeueReusableCell(withIdentifier: CELLINDENTIFIER) as? NewsNewCommentMsgTCell
+        if cell == nil {
+            cell = NewsNewCommentMsgTCell.init(style: .default, reuseIdentifier: CELLINDENTIFIER)
+            cell?.selectionStyle = .none
+        }
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }  
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>57292E78-20BC-4CF1-82DA-990654703A94</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CellDelegate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CellDelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
